@@ -1,0 +1,9 @@
+.mainWrapper {
+   width: var(--webpage-width);
+   padding-top: var(--header-height);
+   
+   &.isMobile {
+      width: 100%;
+      padding-top: 0;
+   }
+}

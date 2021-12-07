@@ -1,0 +1,48 @@
+.issuesPage {
+   background-color: var(--light-yellow-color);
+   padding: 150px 0 142px;
+   text-align: center;
+   position: relative;
+
+   > button {
+      margin: 55px auto 128px;
+   }
+
+   &.isMobile {
+   padding: 30px 0 50px;
+   height: fit-content;
+   > button {
+      margin: 30px auto;
+   }
+   }
+
+   // --------ICON
+   .icon {
+      position: absolute;
+   }
+   .object6 {
+      bottom: 57px;
+      left: 230px;
+   }
+   .object5 {
+      bottom: 85px;
+      right: 353px;
+   }
+   
+   .object4 {
+      top: 498px;
+      left: 411px;
+      &.isMobile {
+         top: 220px;
+         left: 10px;
+      }
+   }
+   .object3 {
+      top: 43px;
+      right: 73px;
+   }
+   .object2 {
+      top: 163px;
+      right: 68px;
+   }
+}

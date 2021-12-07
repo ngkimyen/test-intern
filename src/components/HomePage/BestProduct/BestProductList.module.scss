@@ -1,0 +1,9 @@
+.bestProductList {
+  margin: 362px 176px 0;
+   display: flex;
+
+   &.isMobile {
+     margin: 0;
+     top: 150px;
+   }
+}

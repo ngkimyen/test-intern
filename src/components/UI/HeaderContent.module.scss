@@ -1,0 +1,33 @@
+
+  .header {
+
+   margin: 0 auto;
+   width: fit-content;
+   height: fit-content;
+   text-align: center;
+
+   .heading {
+     font-weight: bold;
+     margin-bottom: 30px;
+   }
+
+   .content {
+     width: 670px;
+
+     &.smallContent {
+       font-size: 1.6rem;
+     }
+   }
+
+   &.isMobile {
+     .heading {
+     margin-bottom: 10px;
+
+     }
+
+     .content {
+       width: 85% !important;
+       margin: 0 auto;
+     }
+   }
+ }

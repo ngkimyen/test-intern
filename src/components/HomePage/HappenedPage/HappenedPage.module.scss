@@ -1,0 +1,89 @@
+.happenedPage {
+   height: 2151px;
+   padding-top: 150px ;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+
+   .happenedHeader {
+
+      >button {
+         margin: 40px auto 72px;
+      }
+   }
+
+   &.isMobile {
+      padding-top: 30px;
+      height: fit-content;
+      .happenedHeader {
+         margin-bottom: 50px ;
+         >button {
+            margin: 30px auto;
+         }
+      }
+
+      .videoImg {
+         left: 0;
+         transform: unset;
+         width: 90%;
+      }
+   }
+   
+   // -----------------ICON
+   .image {
+      position: absolute;
+   }
+   .videoImg {
+      left: 50%;
+      bottom: 857px;
+      transform: translateX(-50%);
+   }
+
+   .object1 {
+      bottom: 611px;
+      left: 348px;
+   }
+   .object2 {
+      bottom: 740px;
+      right: 648px;
+   }
+   .object3 {
+      bottom: 779px;
+      left: 223px;
+      z-index: -2;
+   }
+   .object4 {
+      top: 314px;
+      left: -335px;
+   }
+   .object5 {
+      left: 226px;
+      top: 0;
+   }
+   .object6 {
+      right: 244px;
+      bottom: 1751px;
+   }
+
+   .object7 {
+      right: 138px;
+      bottom: 1837px;
+      z-index: -1;
+   }
+
+   .object8 {
+      bottom: 706px;
+      right: -200px;
+      z-index: -2;
+   }
+   .object9 {
+      bottom: 1118px;
+      right: -170px;
+      z-index: -3;
+   }
+
+
+}

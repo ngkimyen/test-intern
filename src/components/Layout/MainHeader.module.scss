@@ -1,0 +1,46 @@
+@mixin nav {
+  display: flex;
+  color: var(--white-color);
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+@mixin item {
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.mainHeader {
+  width: var(--webpage-width);
+  height: var(--header-height);
+  background-color: var(--black-one-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 120px 27px 97px;
+  position: fixed;
+  z-index: 100;
+
+  &.isMobile {
+    width: 100%;
+    padding: 0 var(--mobile-padding);
+    position: relative;
+    z-index: 98;
+
+    .logo {
+      width: 30%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  .logo {
+    width: 226px;
+    height: 26px;
+    object-fit: contain;
+  }
+
+  .navIcon {
+    font-size: 2rem;
+    color: var(--white-color);
+  }
+}

@@ -1,0 +1,19 @@
+
+      .footerItem {
+         color: var(--black-one-color);
+         text-align: left;
+         line-height: 25px;
+         .heading {
+            font-weight: bold;
+            margin-bottom: 30px
+         }
+
+         &.isMobile {
+            width: 30% ;
+            margin-right:0 ;
+
+            .heading {
+               margin-bottom: 16px;
+            }
+         }
+      }

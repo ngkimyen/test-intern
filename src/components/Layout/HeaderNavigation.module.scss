@@ -1,0 +1,81 @@
+@use "./MainHeader.module.scss" as *;
+
+.navigationWrap {
+  display: flex;
+
+  .navigation {
+    @include nav;
+    border-right: 1px solid var(--border-header-color);
+
+    .navItem {
+      margin-right: 72px;
+      @include item;
+
+      &:first-child {
+        margin-right: 76px;
+      }
+      &:last-child {
+        margin-right: 57px;
+      }
+    }
+  }
+
+  .headerAction {
+    @include nav;
+    .actionItem {
+      @include item;
+      &:first-child {
+        margin-left: 44px;
+        margin-right: 79px;
+      }
+    }
+  }
+
+  .closeBtn {
+    font-size: 2rem;
+    color: var(--white-color);
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    padding: 5px 20px;
+  }
+
+  &.isOverlay {
+    display: block;
+    flex-direction: column;
+    padding: 40px 20px 20px;
+    background-color: var(--black-one-color);
+    position: absolute;
+    right: 0;
+    height: fit-content;
+    text-align: left;
+    z-index: 100;
+    animation: floatIn 0.3s ease-in;
+
+    .navigation {
+      flex-direction: column;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-header-color);
+      border-right: none;
+    }
+
+    .headerAction {
+      margin-top: 10px;
+      flex-direction: column;
+      .actionItem {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@keyframes floatIn {
+   from {
+      opacity: 0;
+      right: -50%;
+   }
+   to {
+      opacity: 1;
+      right: 0;
+   }
+}

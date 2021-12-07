@@ -1,0 +1,9 @@
+.happenedFooter {
+  height: 464px;
+  padding: 0 100px;
+
+  &.isMobile {
+    height: fit-content;
+    padding: 0 var(--mobile-padding);
+  }
+}

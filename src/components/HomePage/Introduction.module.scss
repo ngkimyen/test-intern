@@ -1,0 +1,51 @@
+.introduction {
+  margin-bottom: var(--img-margin);
+  color: var(--white-color);
+
+  .backgroundWrapper {
+    position: relative;
+
+    .backgroundImage {
+      max-height: 576px;
+    }
+    .contentWrapper {
+      position: absolute;
+      top: 174px;
+      left: 173px;
+
+      .introductionHeading {
+        margin-bottom: 59px;
+        text-transform: uppercase;
+      }
+      .content {
+        width: 670px;
+        height: 125px;
+      }
+
+     
+    }
+  }
+
+  &.isMobile {
+
+
+   .backgroundWrapper {
+
+      .backgroundImage {
+        height: 200px;
+        object-fit: cover;
+      }
+   }
+   .contentWrapper {
+      top: 20px;
+      left: 20px;
+      .introductionHeading {
+        margin-bottom: 10px;
+      }
+      .content {
+        width: 80%;
+        text-align: justify;
+      }
+   }
+ }
+}

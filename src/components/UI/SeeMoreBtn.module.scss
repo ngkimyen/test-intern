@@ -1,0 +1,21 @@
+
+   .seeMore {
+      width: 200px;
+      height: 60px;
+      font-size: 2.3rem;
+      font-weight: 800;
+      border: 3px solid var(--maroon-black-color);
+      display: block;
+      
+      &.isMobile {
+         width: 120px;
+         height: 40px;
+         font-size: 1.8rem;
+      }
+
+      &.isSmall {
+         width: 100px;
+         height: 30px;
+         font-size: 1.4rem;
+      }
+   }

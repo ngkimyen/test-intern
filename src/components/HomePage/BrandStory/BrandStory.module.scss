@@ -1,0 +1,103 @@
+.brandStory {
+  height: 965px;
+  background-color: var(--blue-color);
+  padding: 140px 0 170px;
+  position: relative;
+  z-index: -10;
+  overflow: hidden;
+
+  .contentWrapper {
+    height: 430px;
+    width: 1251px;
+    margin: 55px auto 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    position: relative;
+
+    .contentContainer {
+      padding-left: 40px;
+      position: absolute;
+      top: 68px;
+      left: 610px;
+
+      .content {
+        margin: 25px 0 47px;
+        width: 528px;
+        font-size: var(--small-font-size);
+      }
+    }
+  }
+
+  &.isMobile {
+    padding: 30px 0 30px;
+    height: 380px;
+
+    .contentWrapper {
+      width: 100%;  
+      margin-top: 40px;
+
+      .contentContainer {
+        left: 50%;
+        padding-left: 10px ;
+        top: 25px;
+        .heading {
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          font-weight: var(--medium-font-weight);
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  
+
+
+
+
+  // --------------SVG
+  .line {
+    position: absolute;
+    height: 3px;
+    z-index: -2;
+    width: 100%;
+    background: var(--black-two-color);
+    bottom: 217px;
+  }
+  .svg {
+    position: absolute;
+  }
+  .bookShelf {
+    bottom: 203px;
+  }
+
+  .book {
+    bottom: 204px;
+    left: 190px;
+    z-index: -1;
+  }
+  .note {
+    top: 183px;
+    left: 169px;
+    z-index: -1;
+  }
+  .picture {
+    top: 61px;
+    right: 256px;
+  }
+
+  .plan {
+    top: 114px;
+    right: 171px;
+  }
+  .calendar {
+    bottom: 186px;
+    right: -25px;
+    z-index: -1;
+  }
+  .vase {
+    right: -83px;
+    top: 190px;
+    z-index: -2;
+  }
+}
