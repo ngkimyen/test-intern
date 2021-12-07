@@ -5,7 +5,6 @@ import classes from "./NewsItem.module.scss";
 const NewsItem = ({ isNavigation, title, image, padding, color, width, marginLeft, isMobile, isSmallDesktop }) => {
   let itemStyle={}
   if (!isMobile && !isSmallDesktop) itemStyle={width: width, marginLeft: marginLeft}
-  console.log(itemStyle)
   return (
     <div
       className={clsx(classes.newsItem, {

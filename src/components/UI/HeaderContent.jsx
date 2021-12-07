@@ -19,7 +19,7 @@ const HeaderContent = ({
         [classes.isMobile]: isMobile,
         [classes.isSmallDesktop] : isSmallDesktop
       })}
-      style={{ color: color, marginTop: !isSmallDesktop && !isMobile && marginTop }}
+      style={{ color: color, marginTop: (!isSmallDesktop && !isMobile) && marginTop }}
     >
       <h3
         className={clsx("big-heading", classes.heading, {
@@ -33,7 +33,7 @@ const HeaderContent = ({
           [classes.smallContent]: !isMobile && isSmallContent,
           "big-content-mobile": isMobile,
         })}
-        style={{ width: contentWidth }}
+        style={{ width: !isMobile && contentWidth }}
       >
         {content}
       </p>

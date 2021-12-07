@@ -21,8 +21,6 @@ const MainHeader = () => {
 
   }
 
-  console.log(isSmallDesktop)
-
   return (
     <header
       className={clsx(classes.mainHeader, { [classes.isMobile]: isMobile })}
@@ -33,7 +31,7 @@ const MainHeader = () => {
       ) : click && (
         <Modal overlay={<HeaderNavigation isOverlay onClose={handleClose}/>} onClose={handleClose}/>
       )}
-      {isMobile || isSmallDesktop && !click && (
+      {(isMobile || isSmallDesktop) && !click && (
         <button onClick={handleClick}>
           <i className={clsx("fas fa-bars", classes.navIcon)}></i>
         </button>
