@@ -8,6 +8,8 @@ const FooterWrapper = ({ isMobile}) => {
       <div className={clsx(classes.footerWrapper, {[classes.isMobile] : isMobile })}>
       <span>
         <FooterItem
+        isCenter
+        isMobile={isMobile}
           width="235px"
           heading="what happened"
           content="[공지] 개인 정보 처리 방침 변경 사전 안내
