@@ -7,7 +7,7 @@ import SeeMoreBtn from "../../UI/SeeMoreBtn";
 import clsx from "clsx";
 
 const ProductPage = ({isMobile}) => {
-  console.log(ProductItemList);
+  
   return (
     <div className={clsx(classes.productPage, {[classes.isMobile] : isMobile})}>
       <div className={classes.productList}>

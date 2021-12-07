@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React from "react";
-import Modal from "../UI/Modal";
 import classes from "./HeaderNavigation.module.scss";
 
 const HeaderNavigation = ({ isOverlay, onClose }) => {

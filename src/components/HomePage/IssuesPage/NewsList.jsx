@@ -36,7 +36,7 @@ const NewsList = ({isMobile}) => {
         title="E BRAND"
         image="./Image/IssuesPage/news-img-05.png"
         padding="16px 110px 17px 110px"
-        width='383px'
+        width='385px'
         isMobile={isMobile}
 
       />
