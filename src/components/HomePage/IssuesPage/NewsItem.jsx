@@ -2,9 +2,9 @@ import clsx from "clsx";
 import React from "react";
 import classes from "./NewsItem.module.scss";
 
-const NewsItem = ({ isNavigation, title, image, padding, color, width, marginLeft, isMobile }) => {
+const NewsItem = ({ isNavigation, title, image, padding, color, width, marginLeft, isMobile, isSmallDesktop }) => {
   let itemStyle={}
-  if (!isMobile) itemStyle={width: width, marginLeft: marginLeft}
+  if (!isMobile && !isSmallDesktop) itemStyle={width: width, marginLeft: marginLeft}
   console.log(itemStyle)
   return (
     <div

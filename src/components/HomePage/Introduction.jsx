@@ -3,7 +3,7 @@ import classes from "./Introduction.module.scss";
 import introBg from "../../Image/introduction-bg.png";
 import clsx from "clsx";
 
-const Introduction = ({ isMobile }) => {
+const Introduction = ({ isMobile, isSmallDesktop }) => {
   return (
     <div className={clsx(classes.introduction, {[classes.isMobile] : isMobile})}>
       <div className={classes.backgroundWrapper}>
@@ -11,6 +11,7 @@ const Introduction = ({ isMobile }) => {
         <div
           className={clsx(classes.contentWrapper, {
             [classes.isMobile]: isMobile,
+            [classes.isSmallDesktop] : isSmallDesktop
           })}
         >
           <h3

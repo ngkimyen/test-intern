@@ -21,4 +21,8 @@
       }
    }
 
+   &.isSmallDesktop {
+      padding: 50px  var(--small-desktop-padding);
+   }
+
 }

@@ -1,6 +1,5 @@
 .mainWrapper {
-   width: var(--webpage-width);
-   padding-top: var(--header-height);
+   max-width: var(--webpage-width);
    
    &.isMobile {
       width: 100%;

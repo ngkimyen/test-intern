@@ -10,9 +10,9 @@ import product3 from "../../../Image/best-image-03.png";
 import BestItem from "./BestItem";
 import clsx from "clsx";
 
-const BestProductList = ({isMobile}) => {
+const BestProductList = ({isMobile, isSmallDesktop}) => {
   return (
-    <div className={clsx(classes.bestProductList, 'layer-top',{[classes.isMobile]: isMobile}) }>
+    <div className={clsx(classes.bestProductList, 'layer-top',{[classes.isMobile]: isMobile, [classes.isSmallDesktop]: isSmallDesktop}) }>
       <BestItem isMobile={isMobile} icon='./Image/BestProduct/producticon-01.png'  productImage={product1}/>
       <BestItem isMobile={isMobile} icon='./Image/BestProduct/producticon-02.png'  productImage={product2}/>
       <BestItem isMobile={isMobile} icon='./Image/BestProduct/producticon-03.png'  productImage={product3}/>

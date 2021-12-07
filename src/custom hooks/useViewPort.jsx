@@ -13,6 +13,7 @@ const useViewPort = () => {
 
   return {
     isMobile: width < 739,
+    isSmallDesktop: (width >= 740) && (width < 1300 )
   };
 };
 

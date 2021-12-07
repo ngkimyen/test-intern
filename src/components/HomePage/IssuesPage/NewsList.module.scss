@@ -4,4 +4,10 @@
    &.isMobile {
       flex-direction: column;
    }
+
+   &.isSmallDesktop {
+      >div {
+         width: 25%;
+      }
+   }
 }

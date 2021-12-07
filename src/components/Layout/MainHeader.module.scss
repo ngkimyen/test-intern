@@ -11,14 +11,14 @@
 }
 
 .mainHeader {
-  width: var(--webpage-width);
+  max-width: var(--webpage-width);
   height: var(--header-height);
   background-color: var(--black-one-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px 120px 27px 97px;
-  position: fixed;
+  // position: fixed;
   z-index: 100;
 
   &.isMobile {

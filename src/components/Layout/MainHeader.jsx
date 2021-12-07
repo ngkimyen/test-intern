@@ -7,7 +7,7 @@ import HeaderNavigation from "./HeaderNavigation";
 import Modal from "../UI/Modal";
 
 const MainHeader = () => {
-  const { isMobile } = useViewPort();
+  const { isMobile, isSmallDesktop } = useViewPort();
   const [click, setClick] = useState();
 
   const handleClick = () => {
@@ -21,17 +21,19 @@ const MainHeader = () => {
 
   }
 
+  console.log(isSmallDesktop)
+
   return (
     <header
       className={clsx(classes.mainHeader, { [classes.isMobile]: isMobile })}
     >
       <img src={logo} alt="logo header" className={classes.logo} />
-      {!isMobile ? (
-        <HeaderNavigation isMobile={isMobile} />
+      {!isMobile && !isSmallDesktop ? (
+        <HeaderNavigation isMobile={isMobile || isSmallDesktop} />
       ) : click && (
         <Modal overlay={<HeaderNavigation isOverlay onClose={handleClose}/>} onClose={handleClose}/>
       )}
-      {isMobile && !click && (
+      {isMobile || isSmallDesktop && !click && (
         <button onClick={handleClick}>
           <i className={clsx("fas fa-bars", classes.navIcon)}></i>
         </button>

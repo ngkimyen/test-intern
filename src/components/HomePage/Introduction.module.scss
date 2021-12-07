@@ -13,6 +13,11 @@
       top: 174px;
       left: 173px;
 
+      &.isSmallDesktop {
+        top: 80px;
+        left: 150px;
+      }
+
       .introductionHeading {
         margin-bottom: 59px;
         text-transform: uppercase;
@@ -21,22 +26,17 @@
         width: 670px;
         height: 125px;
       }
-
-     
     }
   }
 
   &.isMobile {
-
-
-   .backgroundWrapper {
-
+    .backgroundWrapper {
       .backgroundImage {
         height: 200px;
         object-fit: cover;
       }
-   }
-   .contentWrapper {
+    }
+    .contentWrapper {
       top: 20px;
       left: 20px;
       .introductionHeading {
@@ -46,6 +46,7 @@
         width: 80%;
         text-align: justify;
       }
-   }
- }
+    }
+  }
+
 }

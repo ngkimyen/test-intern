@@ -5,7 +5,7 @@ import SeeMoreBtn from "../../UI/SeeMoreBtn";
 import classes from "./IssuesPage.module.scss";
 import NewsList from "./NewsList";
 
-const IssuesPage = ({ isMobile }) => {
+const IssuesPage = ({ isMobile, isSmallDesktop }) => {
   return (
     <div className={clsx(classes.issuesPage, {[classes.isMobile] : isMobile})}>
       <HeaderContent
@@ -17,7 +17,7 @@ const IssuesPage = ({ isMobile }) => {
         isSmallContent
       />
       <SeeMoreBtn isMobile={isMobile}/>
-      <NewsList isMobile={isMobile}/>
+      <NewsList isMobile={isMobile} isSmallDesktop={isSmallDesktop}/>
       <img
             className={clsx(classes.icon, classes.object4, {[classes.isMobile]: isMobile})}
             src="./Image/IssuesPage/news-object-04.png"

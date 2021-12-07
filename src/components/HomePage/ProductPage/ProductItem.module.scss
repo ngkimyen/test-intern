@@ -4,8 +4,8 @@
   width: 20%;
 
   .productImage {
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   .title {
@@ -43,6 +43,15 @@
     .title {
       margin: 10px 0;
       font-size: 1.6rem;
+    }
+  }
+
+  &.isSmallDesktop {
+    width: 25%;
+    
+    .productImage {
+      width: 100%;
+      height: auto;
     }
   }
 }

@@ -5,13 +5,14 @@ import BestProductList from "./BestProductList";
 import HeaderContent from "../../UI/HeaderContent";
 import clsx from "clsx";
 
-const BestProduct = ({isMobile}) => {
+const BestProduct = ({isMobile, isSmallDesktop}) => {
   return (
     <div className={clsx(classes.bestProduct, {[classes.isMobile]: isMobile})}>
       <div className={classes.backgroundWrapper}>
         <img className={classes.backgroundImage} src={background} />
         <HeaderContent
           isMobile={isMobile}
+          isSmallDesktop={isSmallDesktop}
           className='layer-top'
           marginTop= {isMobile ? '20px' : '150px'}
           color="var(--primary-color)"
@@ -19,7 +20,7 @@ const BestProduct = ({isMobile}) => {
           content="How to create mobile-optimized videos in minutes. Not a designer, 
         every team makes a lot of videos Can be trimmed. Take the first "
         />
-        <BestProductList isMobile={isMobile}/>
+        <BestProductList isMobile={isMobile} isSmallDesktop={isSmallDesktop}/>
       </div>
     </div>
   );

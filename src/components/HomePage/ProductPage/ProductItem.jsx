@@ -4,9 +4,9 @@ import classes from './ProductItem.module.scss';
 import heartIcon from '../../../Image/hearticon.png';
 import clsx from 'clsx';
 
-const ProductItem = ({image, isMobile}) => {
+const ProductItem = ({image, isMobile, isSmallDesktop}) => {
    return (
-      <div className={clsx(classes.productItem, {[classes.isMobile] : isMobile})}>
+      <div className={clsx(classes.productItem, {[classes.isMobile] : isMobile, [classes.isSmallDesktop] : isSmallDesktop})}>
          <img className={classes.productImage} src={image} />
          <h3 className={classes.title}>[what happen] How to create </h3>
          <span className={classes.info}>

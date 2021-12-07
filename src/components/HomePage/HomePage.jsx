@@ -10,16 +10,16 @@ import MainBanner from "./MainBanner";
 import ProductPage from "./ProductPage/ProductPage";
 
 const HomePage = () => {
-  const { isMobile } = useViewPort();
+  const { isMobile, isSmallDesktop } = useViewPort();
   return (
     <section className={classes.homePage}>
-      <MainBanner isMobile={isMobile} />
-      <Introduction isMobile={isMobile} />
-      <BestProduct isMobile={isMobile} />
-      <ProductPage isMobile={isMobile} />
-      <BrandStory isMobile={isMobile} />
-      <IssuesPage isMobile={isMobile} />
-      <HappenedPage isMobile={isMobile} />
+      <MainBanner />
+      <Introduction isMobile={isMobile} isSmallDesktop={isSmallDesktop}/>
+      <BestProduct isMobile={isMobile} isSmallDesktop={isSmallDesktop}/>
+      <ProductPage isMobile={isMobile} isSmallDesktop={isSmallDesktop}/>
+      <BrandStory isMobile={isMobile} isSmallDesktop={isSmallDesktop}/>
+      <IssuesPage isMobile={isMobile} isSmallDesktop={isSmallDesktop}/>
+      <HappenedPage isMobile={isMobile} isSmallDesktop={isSmallDesktop}/>
     </section>
   );
 };

@@ -1,23 +1,18 @@
 .bestProduct {
   max-height: 1073px;
-  
+
   .backgroundWrapper {
     position: relative;
 
     .backgroundImage {
       width: 100%;
-      max-height: 1073px
+      max-height: 1073px;
     }
   }
 
   &.isMobile {
-    .backgroundWrapper {
-
-      .backgroundImage {
-
-        height: 340px;
-      }
-
+    .backgroundWrapper .backgroundImage {
+      height: 340px;
     }
   }
 

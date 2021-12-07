@@ -4,6 +4,7 @@ import classes from "./HeaderContent.module.scss";
 
 const HeaderContent = ({
   isMobile,
+  isSmallDesktop,
   className,
   title,
   content,
@@ -16,12 +17,13 @@ const HeaderContent = ({
     <div
       className={clsx(classes.header, className, {
         [classes.isMobile]: isMobile,
+        [classes.isSmallDesktop] : isSmallDesktop
       })}
-      style={{ color: color, marginTop: marginTop }}
+      style={{ color: color, marginTop: !isSmallDesktop && !isMobile && marginTop }}
     >
       <h3
         className={clsx("big-heading", classes.heading, {
-          ["big-heading-mobile"]: isMobile,
+          "big-heading-mobile": isMobile,
         })}
       >
         {title}
@@ -29,7 +31,7 @@ const HeaderContent = ({
       <p
         className={clsx("big-content", classes.content, {
           [classes.smallContent]: !isMobile && isSmallContent,
-          ["big-content-mobile"]: isMobile,
+          "big-content-mobile": isMobile,
         })}
         style={{ width: contentWidth }}
       >
